@@ -13,6 +13,7 @@ Another thing to note is that in some languages, a class can only extend one oth
 
 As always the best way to show how to implement anything is with some sample code
 
+```
         public class Portion 
         {
             public decimal Size { get; set; }
@@ -84,6 +85,7 @@ As always the best way to show how to implement anything is with some sample cod
                 Console.ReadKey();
             }
         }
+```
 
 In this example, we have a Cat and Dog class which are being fed a portion of food. The first problem is that if we want to change the amount of food each Cat or Dog is being fed we need to change their class, which is a violation of the Open Closed Principle, and the fact that they need to worry about how much they are being fed is a violation of the Single Responsibility Principle, plus I don’t really think that a Cat or a Dog would make a healthy decision about portion size, so let’s change that first.
 
